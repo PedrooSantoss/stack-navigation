@@ -1,6 +1,6 @@
-import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-
+import styles from "./styles";
 
 export default function Home() {
   const navigation = useNavigation();
@@ -18,23 +18,3 @@ export default function Home() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "lightgray",
-  },
-  text: {
-    fontSize: 20,
-  },
-  button: {
-    backgroundColor: "blue",
-    padding: 10,
-    margin: 10,
-  },
-  buttonText: {
-    color: "white",
-    fontSize: 20,
-  },
-});

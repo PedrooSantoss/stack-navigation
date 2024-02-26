@@ -10,9 +10,45 @@ const Stack = createNativeStackNavigator();
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Profile" component={Profile} />
-        <Stack.Screen name="Contact" component={Contact} />
+        <Stack.Screen name="Home" component={Home} options={{
+          title: "Home",
+          headerStyle: {
+            backgroundColor: "lightgray",
+          },
+          headerTintColor: "white",
+          headerTitleStyle: {
+            fontWeight: "bold",
+          
+          },
+        headerTitleAlign: "center",
+        
+        }}/>
+        <Stack.Screen name="Profile" component={Profile}  options={{
+          title: "Profile",
+          headerStyle: {
+            backgroundColor: "lightgray",
+          },
+          headerTintColor: "white",
+          headerTitleStyle: {
+            fontWeight: "bold",
+          },
+        headerTitleAlign: "center",
+        headerShown: false,
+        }}/>
+        
+        <Stack.Screen name="Contact" component={Contact}  options={{
+          title: "Contact",
+          headerStyle: {
+            backgroundColor: "lightgray",
+          },
+          headerTintColor: "white",
+          headerTitleStyle: {
+            fontWeight: "bold",
+          },
+        headerTitleAlign: "center",
+        headerShown: false,
+        }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
